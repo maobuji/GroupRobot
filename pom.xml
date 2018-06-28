@@ -16,12 +16,11 @@
     <packaging>jar</packaging>
 
     <properties>
-        <mybatis-spring-boot>1.2.0</mybatis-spring-boot>
-        <mysql-connector>6.0.6</mysql-connector>
+        <mysql-connector-version>6.0.6</mysql-connector-version>
+        <chatapi-wecha-version>1.1.2</chatapi-wecha-version>
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
@@ -39,9 +38,23 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+        </dependency>
+        <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql-connector}</version>
+            <version>${mysql-connector-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>me.xuxiaoxiao</groupId>
+            <artifactId>chatapi-wechat</artifactId>
+            <version>${chatapi-wecha-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
