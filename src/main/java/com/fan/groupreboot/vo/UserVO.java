@@ -3,7 +3,7 @@ package com.fan.groupreboot.vo;
 /**
  * Created by Administrator on 2018/6/28.
  */
-public class UserClientVO {
+public class UserVO {
 
     private String name;
 
@@ -14,7 +14,6 @@ public class UserClientVO {
     public void setName(String name) {
         this.name = name;
     }
-
 
 
 }

@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 
-已登录用户列表：
-<table border="1">
-    <tr>
-        <th>用户名</th>
-    </tr>
-    <tr th:each="userClient: ${userClients}">
-        <td th:text="${userClient.name}"></td>
-    </tr>
-</table>
 
+
+<p><a th:href="@{/login}">重新登录</a></p>
+<p><a th:href="@{/}">刷新</a></p>
+
+当前已登录用户信息：<br>
+用户名:<span th:text="${userClient.name}"/><br>
 
 
 </body>
